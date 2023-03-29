@@ -177,7 +177,7 @@ intro()
 while ch != 8:
     #system("cls");
     print("\tMAIN MENU")
-    print("\t1. NEW ACCOUNT")
+    print("\t1. NEW ACCOUNT(exisiting name or account number should not be entered)")
     print("\t2. DEPOSIT AMOUNT")
     print("\t3. WITHDRAW AMOUNT")
     print("\t4. BALANCE ENQUIRY")
