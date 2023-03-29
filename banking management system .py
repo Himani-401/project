@@ -14,10 +14,10 @@ class Account :
     type = ''
     
     def createAccount(self):
-        self.accNo= int(input("Enter the account no: "))
-        self.name = input("Enter the account holder name: ")
+        self.accNo= int(input("Enter the account no : "))
+        self.name = input("Enter the account holder name that you wish to be shown: ")
         self.type = input("Ente the type of account [C/S] : ")
-        self.deposit = int(input("Enter The Initial amount(>=500 for Saving and >=1000 for current"))
+        self.deposit = int(input("Enter The Initial amount"))
         print("\n\n\nAccount Created")
     
     def showAccount(self):
@@ -52,7 +52,7 @@ class Account :
     
 
 def intro():
-    print("----welcome-----")
+    print("----welcome to the banking management-----")
 
 input("enter any key to continue")
 
