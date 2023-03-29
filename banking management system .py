@@ -212,7 +212,7 @@ while ch != 8:
         print("\tThanks for using bank managemnt system")
         break
     else :
-        print("Invalid choice")
+        print("Invalid choice. enter the number between 1-8")
     
     ch = input("Enter your choice : ")
     
