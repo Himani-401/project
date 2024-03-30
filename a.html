@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Hover Effect</title>
+    <style>
+        .container {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            margin: 50px auto;
+            overflow: hidden;
+        }
+
+        .image {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            transition: all 0.5s ease;
+            z-index: 1;
+        }
+
+        .mother {
+            top: 0;
+            left: 0;
+        }
+
+        .child {
+            bottom: 0;
+            right: 0;
+        }
+
+        .container:hover .mother {
+            top: 100px;
+            left: 100px;
+            z-index: 2;
+            opacity: 0;
+        }
+
+        .container:hover .child {
+            bottom: 100px;
+            right: 100px;
+            z-index: 2;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="mother_image.jpg" alt="Mother" class="image mother">
+        <img src="child_image.jpg" alt="Child" class="image child">
+    </div>
+</body>
+</html>
+
